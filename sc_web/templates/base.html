@@ -1,85 +1,85 @@
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>{{ title }}</title>
-{#	<link href="/media/css/templatemo_style.css" rel="stylesheet" type="text/css" />#}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{ title }}</title>
+    {#	<link href="/media/css/templatemo_style.css" rel="stylesheet" type="text/css" />#}
 
 
-	<link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap-responsive.min.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap-multilevel.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/bootstrap/bootstrap-multilevel.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/common.css" />
 
-	<script type="text/javascript" src="media/js/jquery/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="media/js/jquery/jquery.namespace.js"></script>
-	<script type="text/javascript" src="media/js/bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src="media/js/scui.js"></script>
-{#	<script type="text/javascript" src="media/js/sc-web-core.js"></script>#}
+    <script type="text/javascript" src="media/js/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="media/js/jquery/jquery.namespace.js"></script>
+    <script type="text/javascript" src="media/js/bootstrap/bootstrap.min.js"></script>
+    {#	<script type="text/javascript" src="media/js/scui.js"></script>#}
+    <script type="text/javascript" src="media/js/sc-web-core.js"></script>
 
-	
-	{% block head %}{% endblock %}
+
+    {% block head %}{% endblock %}
 </head>
 
 <body id="home">
 
-	<!-- header -->
-	<!--<div class="page-header">
-		<h1>IMS<small>OSTIS</small></h1>
-    </div>-->
-	<div class="navbar">
-		<div class="navbar-inner">
-			<a class="brand" href="#">OSTIS</a>
-			<div id="menu_container">
-				<!-- there will be placed menu items -->				
-			</div>
-			<div class="language_selectors navbar-form pull-right">
-				<select class="combobox" id="select_output_language">
-					<!-- Options will be inserted on start -->
-				</select>
-				<select class="combobox" id="select_idtf_language">
-					<!-- Options will be inserted on start -->
-				</select>
-			</div>
-		</div>
-	</div>
-	
-
-	<!-- main content -->
-	<div id="main_container"></div>
-		<ul class="nav nav-tabs">
-			<li class="active">
-				<a href="#">Test</a>
-				<div id="answer_container"></div>
-			</li>
-		</ul>
-		<!--{% block content %}{% endblock %}-->
-	</div> <!-- END of main -->
+<!-- header -->
+<!--<div class="page-header">
+    <h1>IMS<small>OSTIS</small></h1>
+</div>-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#">OSTIS</a>
+        <div id="menu_container">
+            <!-- there will be placed menu items -->
+        </div>
+        <div class="language_selectors navbar-form pull-right">
+            <select class="combobox" id="select_output_language">
+                <!-- Options will be inserted on start -->
+            </select>
+            <select class="combobox" id="select_idtf_language">
+                <!-- Options will be inserted on start -->
+            </select>
+        </div>
+    </div>
+</div>
 
 
-	<!-- footer -->
-	<div id="footer">
-		<hr/>
-		Copyright © 2012 <a href="#">OSTIS</a> 
-	</div> <!-- END of footer -->
-	
-	
-	<!-- Initialize user interface -->
-	<script type="text/javascript">
-		var _scui = new scuiRoot();
+<!-- main content -->
+<div id="main_container"></div>
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a href="#">Test</a>
+        <div id="answer_container"></div>
+    </li>
+</ul>
+<!--{% block content %}{% endblock %}-->
+</div> <!-- END of main -->
 
-        _scui._notifyCreated = function(){
-        }
-        _scui["_notifyUpdateMenu"] = function(){}
-		_scui.init({});
 
-		// load example extension
-        function example_loaded(script, textStatus){
-            alert(textStatus);
-        }
-        //_scui.loadScript("media/js/example/example.js", example_loaded);
-	</script>
-	
+<!-- footer -->
+<div id="footer">
+    <hr/>
+    Copyright © 2012 <a href="#">OSTIS</a>
+</div> <!-- END of footer -->
+
+
+{#	<!-- Initialize user interface -->#}
+{#	<script type="text/javascript">#}
+{#		var _scui = new scuiRoot();#}
+{##}
+{#        _scui._notifyCreated = function(){#}
+{#        }#}
+{#        _scui["_notifyUpdateMenu"] = function(){}#}
+{#		_scui.init({});#}
+{##}
+{#		// load example extension#}
+{#        function example_loaded(script, textStatus){#}
+{#            alert(textStatus);#}
+{#        }#}
+{#        //_scui.loadScript("media/js/example/example.js", example_loaded);#}
+{#	</script>#}
+
 </body>
 
 </html>
